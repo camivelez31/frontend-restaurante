@@ -1,0 +1,12 @@
+{
+  "name": "frontend-restaurante",
+  "version": "1.0.0",
+  "description": "Frontend del sistema de restaurante",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "author": "Maria Camila Velez",
+  "license": "ISC",
+  "dependencies": {}
+}
