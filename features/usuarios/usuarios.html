@@ -2,24 +2,61 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Usuarios</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Usuarios | MAG</title>
+
+  <link rel="stylesheet" href="../../styles/style.css">
   <link rel="stylesheet" href="usuarios.css">
 </head>
 <body>
-  <main class="container">
-    <h1>Usuarios</h1>
-    <p>Feature inicial para la gestión de usuarios del sistema.</p>
 
-    <section class="card">
-      <h2>Listado de usuarios</h2>
-      <p>En esta sección se conectará el consumo del endpoint de usuarios.</p>
+  <header class="header">
+    <div class="header-logo">
+      <img src="../../assets/images/logo-mag.jpg" alt="Logo MAG">
+      <span>Restaurante MAG</span>
+    </div>
 
-      <button id="btn-cargar-usuarios">Cargar usuarios</button>
+    <nav class="nav-menu">
+      <a href="../../index.html">Inicio</a>
+      <a href="../clientes/clientes.html">Clientes</a>
+      <a href="../pedidos/pedidos.html">Pedidos</a>
+      <a href="../usuarios/usuarios.html">Usuarios</a>
+      <button id="logout-btn">Cerrar sesión</button>
+    </nav>
+  </header>
 
-      <div id="usuarios-lista"></div>
+  <main class="page-container">
+    <h1 class="page-title">Usuarios del sistema</h1>
+    <p class="page-subtitle">Módulo inicial para la gestión de usuarios autenticados.</p>
+
+    <section class="usuarios-layout">
+      <article class="usuario-card principal">
+        <h2>Administrador</h2>
+        <p>Usuario principal del sistema.</p>
+
+        <div class="usuario-info">
+          <span>Usuario</span>
+          <strong>admin</strong>
+        </div>
+
+        <div class="usuario-info">
+          <span>Rol</span>
+          <strong>Administrador</strong>
+        </div>
+
+        <div class="usuario-info">
+          <span>Estado</span>
+          <strong class="estado activo">Activo</strong>
+        </div>
+      </article>
+
+      <article class="usuario-card">
+        <h2>Seguridad</h2>
+        <p>El acceso al sistema se realiza mediante JWT.</p>
+        <button id="btn-validar" class="btn-primary">Validar sesión</button>
+        <p id="mensaje-sesion"></p>
+      </article>
     </section>
-
-    <a href="../../index.html">Volver al inicio</a>
   </main>
 
   <script src="usuarios.js"></script>

@@ -1,4 +1,35 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 40px;
+.cliente-card {
+  background: white;
+  border-radius: 22px;
+  padding: 24px;
+  box-shadow: var(--sombra);
+  border-top: 5px solid var(--color-naranja);
+  transition: transform 0.2s ease;
+}
+
+.cliente-card:hover {
+  transform: translateY(-4px);
+}
+
+.cliente-card h3 {
+  margin-top: 0;
+  color: var(--color-cafe);
+  font-size: 22px;
+}
+
+.cliente-info {
+  margin-top: 18px;
+}
+
+.cliente-info p {
+  margin: 10px 0;
+  color: #555;
+}
+
+.empty-state {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: var(--sombra);
 }

@@ -3,23 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Frontend Restaurante</title>
+  <title>MAG Restaurante</title>
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <h1>Frontend del Sistema de Restaurante</h1>
-  <p>Proyecto frontend inicial.</p>
 
-  <nav>
-    <ul>
-      <li><a href="features/login/login.html">Login</a></li>
-      <li><a href="features/clientes/clientes.html">Clientes</a></li>
-      <li><a href="features/pedidos/pedidos.html">Pedidos</a></li>
-      <li><a href="features/usuarios/usuarios.html">Usuarios</a></li>
-    </ul>
-  </nav>
+  <header class="header">
+    <div class="header-logo">
+      <img src="assets/images/logo-mag.jpg" alt="Logo MAG">
+      <span>Restaurante & Asados MAG</span>
+    </div>
 
-  <script src="routes/app.routes.js"></script>
-  <script src="js/app.js"></script>
+    <nav class="nav-menu">
+      <a href="index.html">Inicio</a>
+      <a href="features/login/login.html">Login</a>
+      <a href="features/clientes/clientes.html">Clientes</a>
+      <a href="features/pedidos/pedidos.html">Pedidos</a>
+      <a href="features/usuarios/usuarios.html">Usuarios</a>
+    </nav>
+  </header>
+
+  <main class="page-container">
+    <h1 class="page-title">Panel del Restaurante</h1>
+    <p class="page-subtitle">Sistema web para la gestión del restaurante MAG.</p>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Clientes</h2>
+        <p>Consulta y gestión de clientes registrados.</p>
+        <a href="features/clientes/clientes.html">
+          <button class="btn-primary">Ver clientes</button>
+        </a>
+      </article>
+
+      <article class="card">
+        <h2>Pedidos</h2>
+        <p>Consulta y administración de pedidos.</p>
+        <a href="features/pedidos/pedidos.html">
+          <button class="btn-primary">Ver pedidos</button>
+        </a>
+      </article>
+
+      <article class="card">
+        <h2>Usuarios</h2>
+        <p>Gestión inicial de usuarios del sistema.</p>
+        <a href="features/usuarios/usuarios.html">
+          <button class="btn-primary">Ver usuarios</button>
+        </a>
+      </article>
+    </section>
+  </main>
+
 </body>
 </html>

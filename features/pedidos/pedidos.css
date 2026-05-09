@@ -1,4 +1,41 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 40px;
+.pedido-card {
+  background: white;
+  border-radius: 22px;
+  padding: 24px;
+  box-shadow: var(--sombra);
+  border-top: 5px solid var(--color-naranja);
+  transition: transform 0.2s ease;
+}
+
+.pedido-card:hover {
+  transform: translateY(-4px);
+}
+
+.pedido-card h3 {
+  margin-top: 0;
+  color: var(--color-cafe);
+  font-size: 22px;
+}
+
+.pedido-info p {
+  margin: 10px 0;
+  color: #555;
+}
+
+.estado {
+  display: inline-block;
+  background: var(--color-naranja);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.empty-state {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: var(--sombra);
 }

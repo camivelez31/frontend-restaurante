@@ -1,11 +1,21 @@
-console.log("Feature usuarios cargada correctamente.");
+const token = localStorage.getItem("token");
 
-const botonUsuarios = document.getElementById("btn-cargar-usuarios");
-const usuariosLista = document.getElementById("usuarios-lista");
+if (!token) {
+  window.location.href = "../login/login.html";
+}
 
-botonUsuarios.addEventListener("click", () => {
-  usuariosLista.innerHTML = `
-    <p>Feature de usuarios creada correctamente.</p>
-    <p>Luego se conectará con el backend usando JWT.</p>
-  `;
+const mensajeSesion = document.getElementById("mensaje-sesion");
+const botonValidar = document.getElementById("btn-validar");
+
+botonValidar.addEventListener("click", () => {
+  if (token) {
+    mensajeSesion.textContent = "Sesión activa con token JWT.";
+  } else {
+    mensajeSesion.textContent = "No hay sesión activa.";
+  }
+});
+
+document.getElementById("logout-btn").addEventListener("click", () => {
+  localStorage.removeItem("token");
+  window.location.href = "../login/login.html";
 });

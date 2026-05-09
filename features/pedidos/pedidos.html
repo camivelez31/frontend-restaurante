@@ -2,12 +2,35 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Pedidos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedidos | MAG</title>
+
+  <link rel="stylesheet" href="../../styles/style.css">
   <link rel="stylesheet" href="pedidos.css">
 </head>
 <body>
-  <h2>Pedidos</h2>
-  <p>Aquí se mostrará la lista de pedidos.</p>
+
+  <header class="header">
+    <div class="header-logo">
+      <img src="../../assets/images/logo-mag.jpg" alt="Logo MAG">
+      <span>Restaurante MAG</span>
+    </div>
+
+    <nav class="nav-menu">
+      <a href="../../index.html">Inicio</a>
+      <a href="../clientes/clientes.html">Clientes</a>
+      <a href="../pedidos/pedidos.html">Pedidos</a>
+      <a href="../usuarios/usuarios.html">Usuarios</a>
+      <button id="logout-btn">Cerrar sesión</button>
+    </nav>
+  </header>
+
+  <main class="page-container">
+    <h1 class="page-title">Pedidos registrados</h1>
+    <p class="page-subtitle">Consulta de pedidos conectados desde la API REST.</p>
+
+    <section id="pedidos-container" class="grid"></section>
+  </main>
 
   <script src="pedidos.js"></script>
 </body>
