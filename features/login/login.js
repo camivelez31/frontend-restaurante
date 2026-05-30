@@ -1,4 +1,4 @@
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "https://backend-restaurante-qfth.onrender.com";
 
 document.querySelector("form").addEventListener("submit", async (e) => {
   e.preventDefault();
