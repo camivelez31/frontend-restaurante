@@ -83,6 +83,35 @@ frontend-restaurante/
 ```
 
 ---
+# Video Examen Final
+
+En el siguiente video se evidencia:
+
+- Ejecución de pruebas automatizadas con Pytest
+- 5 pruebas exitosas
+- Backend desplegado en Render
+- Frontend desplegado en Firebase
+- Autenticación mediante JWT
+- Consumo de API REST desplegada
+- Consulta de clientes
+- Consulta de pedidos
+- Rutas protegidas
+- Integración completa entre frontend y backend
+
+## Backend desplegado
+
+https://backend-restaurante-qfth.onrender.com/docs
+
+## Frontend desplegado
+
+https://frontend-restaurante-mag.web.app
+
+## Video de demostración
+
+https://drive.google.com/file/d/14eeMAOv-Jks-Nd4lKhCyfuTuj9BEAB6Y/view?usp=sharing
+
+---
+
 
 ## Configuración de la API
 
